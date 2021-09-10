@@ -1,0 +1,53 @@
+.order-container .order-scroller{position:relative}
+
+/* ActionpadWidget */
+.actionpad .set-customer{line-height:48px}
+.ActionpadWidget-user_pastille{float:left;margin-left:-36px;width:46px;height:46px;border-radius:50%;background-size: 120%;background-repeat:no-repeat;background-position:center}
+
+/* OrderSelectorWidget */
+.OrderSelectorWidget-user_pastille{float:left;width:38px;height:38px;border-radius:50%;background-size: 120%;background-repeat:no-repeat;background-position:center;margin: 4px 4px 0 -4px;}
+
+/* Customers list Kanban view */
+.kanban-etiquette{width:410px;background:#FFF; border:1px solid #ced4da;margin:15px 0 0 15px; float:left;border-radius:12px}
+.kanban-etiquette:hover{box-shadow: 2px 2px 2px rgba(0,0,0,.5);}
+.kanban-etiquette .col_1{width:110px;float:left;}
+.kanban-etiquette .col_2{width:280px;float:left;padding:20px 10px}
+.kanban-cust-image{width:100px;height:120px;padding:10px}
+.kanban-cust-image img{max-width:100px;max-height:100px;margin-top:56%}
+.partner_name,.partner_txt div {text-align:left!important;line-height:1.4em}
+.partner_name{font-size:1.2em;font-weight:600;margin-bottom:8px;height:2.4em}
+
+/* ClientDetails */
+.client-details-left, .client-details-right{display:table}
+.client-detail{display:table-row}
+.client-detail span{display:table-cell!important;text-align:left!important;padding:0 3px!important}
+.client-detail span:first-child{width:190px!important;text-align:right!important}
+
+.order{padding:0!important}
+.orderlineTable{font-size:12px;display:table!important;}
+.orderlineTable .table-header{background:#000;}
+.orderlineTable .table-header > div{color:#FFF;font-weight:200!important; padding:12px 4px;}
+.orderlineTable div.line-cell{display:table-cell!important;font-weight:200!important;color:#333; padding:12px 4px 6px;vertical-align: top;font-size:.9em!important}
+
+.table-row{display:table-row!important}
+.table-row > div{display:table-cell!important}
+
+.pos .order .orderline .pos_product_image{float:left;margin:auto;}
+.pos .order {padding-top: 0px !important;}
+.pos .order .orderline .product-name {padding-top: 11px !important;width:auto!important}
+.pos .order .orderline .info-list {color: #888;margin-left: 10px;padding-bottom: 19px;}
+.pos .order .orderline .product-THC-content{color:#FF0000!important;display:none}
+
+.orderline-btn{float:left;display:block!important;height:40px;width:40px;background:transparent!important;border:none!important;color:#OOO!important;padding:0!important}
+.line-quant{float:left;width:18px;line-height:40px;text-align:center!important}
+
+.txt-right{text-align:right!important}
+.strong{font-weight:600!important}
+
+.pay .achtun-limits{display:none;}
+.pay .achtun-limits .fa{font-size:72px; color:#FF0000;}
+.pay .text-btn-payment{font-weight:200!important;font-family: GeniusFont, "Lato","Lucida Grande", Helvetica, Verdana, Arial;line-height:1em!important;font-size:18px}
+
+.table-profile td {padding:4px 8px!important;text-align:left!important;font-size:13px!important;line-height:1.2em!important}
+.table-profile tr.ineedaline{border-bottom: 1px solid #EBEBEB;}
+.table-profile tr.ineedaline td{padding-bottom:12px!important}

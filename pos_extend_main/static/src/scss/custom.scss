@@ -1,0 +1,132 @@
+body.o_odoo_customer_display {
+    font-family: "Lato","Lucida Grande", Helvetica, Verdana, Arial;
+}
+
+.pos{
+  color:#222;
+
+  button{
+    background:#fff;
+    color:#222;
+  }
+
+  .actionpad{
+    background: black;
+
+    .button {
+      color:#222;
+    }
+  }
+  .numpad{
+    background: black;
+  }
+
+  .order-button.floor-button {
+    background: #00ebb5;
+    color: #222;
+  }
+
+  li.orderline {
+    color: #222;
+  }
+
+  .categories {
+    position: relative;
+    border-bottom: solid 6px #00ebb5;
+  }
+  .category-list {
+    border-bottom: 0;
+
+    .category-button {
+      width: 120px;
+      height: 110px;
+      background: #fff;
+      border: 1px solid #fe21c7;
+      border-radius: 10px;
+      border-bottom-width: 4px;
+      border-left-width: 2px;
+      font-weight: bold;
+
+      .category-name {
+        padding: 6px;
+        padding-top: 10px;
+        color: #505050;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .order .summary{
+    .total {
+      font-size: 20px;
+      color: white;
+
+      span.value {
+        color: #00ebb5;
+      }
+    }
+
+    .loyalty-points {
+      color: #00ebb5;
+      background: black;
+    }
+
+    .line {
+      float: right;
+      margin-right: 15px;
+      margin-left: 15px;
+      background: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      border: none;
+      -webkit-box-shadow: -8px 8px 0px -1px rgba(255,0,200,1);
+      -moz-box-shadow: -8px 8px 0px -1px rgba(255,0,200,1);
+      box-shadow: -8px 8px 0px -1px rgb(255, 0, 200);
+    }
+  }
+
+  .leftpane .pads {
+    border-top: solid 6px #00ebb5;
+    background: black;
+  }
+
+  .control-button {
+    background: #fff;
+    border-radius: 4px;
+    color: #222;
+
+    .control-button-number, button {
+      background: #fff;
+      color: #222;
+    }
+  }
+
+  .control-button.highlight, .button.highlight {
+    background: #fe21c7 !important;
+    border: solid 1px #fe21c7 !important;
+    color: white !important;
+  }
+
+  .mode-button.selected-mode {
+    color: white;
+    background: #fe21c7;
+    border-color: transparent;
+  }
+  .product {
+    border: 0px solid #00ebb5;
+    border-bottom-width: 2px;
+    .product-name {
+      color: #222;
+    }
+  }
+
+
+
+  .button.cancel {
+    color: #222;
+  }
+  .button.confirm {
+    color: #222;
+  }
+
+}

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+cap_partner_creation_wiz,cap_partner_creation_wiz.all,model_partner_creation_shortcut,,1,1,1,1
+cap_partner_source,cap_partner_source.all,model_cap_partner_source,,1,1,1,1

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="journal_entries_import_form_view" model="ir.ui.view">
+        <field name="name">import.account.move.form.view</field>
+        <field name="model">import.account.move</field>
+        <field name="arch" type="xml">
+            <form string="Import Journal Entries">
+                <group>
+                    <group>
+                        <field name="import_option" widget="radio"/>
+                        <field name="file"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="import_journal_entries" string="Import" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_journal_entries_import" model="ir.actions.act_window">
+        <field name="name">Import Journal Entries</field>
+        <field name="res_model">import.account.move</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

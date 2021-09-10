@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Assets -->
+	<template id="assets_backend" inherit_id="web.assets_backend" name="Website Backend Assets (used in backend interface)">
+	    <xpath expr="//link[last()]" position="after">
+	        <link rel="stylesheet" type="text/css" href="/live_sale_statistic/static/src/css/statistic.css"/>
+	    </xpath>
+	    <xpath expr="//script[last()]" position="after">
+	        <script type="text/javascript" src="/live_sale_statistic/static/src/js/saleStatistic.js"/>
+	        
+	    </xpath>
+	</template>
+</odoo>

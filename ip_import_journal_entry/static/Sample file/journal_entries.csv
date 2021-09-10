@@ -1,0 +1,5 @@
+Name,Account_id,Partner_id,Analytic _account_id,Amount Currency,Currency,Debit,Credit,Date maturity
+MISC/2017/0001,111100,Deco Addict,Asustek - Wood Corner,0,EUR,1000,0,2018-10-08
+MISC/2017/0001,101200,Deco Addict,Asustek - Wood Corner,0,EUR,0,1000,2018-10-08
+MISC/2017/0002,111100,Deco Addict,Asustek - Wood Corner,0,EUR,2000,0,2018-10-09
+MISC/2017/0002,101200,Deco Addict,Asustek - Wood Corner,0,EUR,0,2000,2018-10-09

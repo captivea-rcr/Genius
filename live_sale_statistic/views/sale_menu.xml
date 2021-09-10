@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+		<record id="live_sale_statistic" model="ir.actions.client">
+            <field name="name">Live Sale Statistic</field>
+            <field name="tag">live_sale_statistic</field>
+        </record>
+        
+        <record id="ir_actions_server_live_sale_statistic" model="ir.actions.server">
+            <field name="name">Live Sale Statistic</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="state">code</field>
+            <field name="code">action = model.env.ref('live_sale_statistic.live_sale_statistic').read()[0]</field>
+        </record>
+        
+        <menuitem action="ir_actions_server_live_sale_statistic" id="menu_action_sale_live_statistic" parent="sale.sale_menu_root" sequence="5"/>
+	</data>
+</odoo>

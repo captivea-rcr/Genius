@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ADD CATEGORIES TO 'RES.PARTNER' FORM VIEW USED IN 'KIOSK' APP -->
+     <!-- <record id="project_project_form_simplified" model="ir.ui.view">
+         <field name="name">project.project.form.simplified.inherit</field>
+         <field name="model">project.project</field>
+         <field name="inherit_id" ref="project.project_project_view_form_simplified"/>
+         <field name="arch" type="xml">
+             <xpath expr="//field[@name='name']" position="after">
+               <field name="template_id"/>
+             </xpath>
+         </field>
+     </record> -->
+
+
+</odoo>

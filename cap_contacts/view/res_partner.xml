@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cap_contacts_form" model="ir.ui.view">
+        <field name="name">cap_contacts_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="ref" position="after">
+                <field name="source"/>
+            </field>
+            <field name="company_id" position="after">
+                <field name="business_card" widget="image" class="oe_avatar" nolabel="1"
+                       options="{&quot;preview_image&quot;: &quot;business_card&quot;, &quot;size&quot;: [130, 130]}"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_so_rating_form">
+        <field name="name">view.so.rating.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Sale Orders Ratings">
+                    <field name="rate_ids">
+                        <tree editable="bottom">
+                            <field name="rate" widget="priority"/>
+                            <field name="note"/>
+                        </tree>
+                        <form>
+                            <sheet>
+                                <group>
+                                    <group>
+                                        <field name="date"/>
+                                        <field name="rate" widget="priority"/>
+                                    </group>
+                                    <group>
+                                        <field name="so_id"/>
+                                        <field name="partner_id"/>
+                                    </group>
+                                </group>
+                                <separator string="Description"/>
+                                <field name="note" nolabel="1" placeholder="Description of the review..."/>
+                            </sheet>
+                        </form>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_so_partner_rating_form">
+        <field name="name">view.so.partner.rating.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Customer's Rating">
+                    <field name="rate_ids">
+                        <tree create="false">
+                            <field name="so_id"/>
+                            <field name="rate" widget="priority"/>
+                            <field name="note"/>
+                        </tree>
+                        <form>
+                            <sheet>
+                                <group>
+                                    <group>
+                                        <field name="date"/>
+                                        <field name="rate" widget="priority"/>
+                                    </group>
+                                    <group>
+                                        <field name="so_id"/>
+                                        <field name="partner_id"/>
+                                    </group>
+                                </group>
+                                <separator string="Description"/>
+                                <field name="note" nolabel="1" placeholder="Description of the review..."/>
+                            </sheet>
+                        </form>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="view_so_review_form">
+        <field name="name">view.so.review.form</field>
+        <field name="model">sale.order.review</field>
+        <field name="arch" type="xml">
+            <form string="Sales Review">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="so_id"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="rate" widget="priority"/>
+                            <field name="date"/>
+                        </group>
+                    </group>
+                    <separator string="Description"/>
+                    <field name="note" nolabel="1" placeholder="Description of the review..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_so_review_tree">
+        <field name="name">view.so.review.tree</field>
+        <field name="model">sale.order.review</field>
+        <field name="arch" type="xml">
+          <tree string="Sales Order Reviews">
+              <field name="rate"/>
+              <field name="note"/>
+              <field name="so_id"/>
+              <field name="partner_id" invisible="0"/>
+              <field name="date"/>
+              <button name="action_redirect_to_record"
+                      string="Open Sale Order"
+                      type="object"
+                      class="oe_highlight"/>
+          </tree>
+        </field>
+    </record>
+
+    <record id="view_so_review_action" model="ir.actions.act_window">
+        <field name="name">Sales Orders Review</field>
+        <field name="res_model">sale.order.review</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_view_so_review"
+              name="Sales Orders Reviews"
+              action="view_so_review_action"
+              parent="sale.menu_sale_report"/>
+</odoo>

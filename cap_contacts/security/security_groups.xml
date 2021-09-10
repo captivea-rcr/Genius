@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- MANAGE 'MAINTENANCE.REQUEST' VIEWS -->
+    <data>
+
+        <record model="res.groups" id="group_normal_contacts_show">
+            <field name="name">Normal Contacts Show</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            <field name="users" eval="[(4, ref('base.default_user')), (4, ref('base.user_admin'))]"/>
+        </record>
+
+        <record model="res.groups" id="group_whole_sale">
+            <field name="name">WholeSale</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+
+
+    </data>
+</odoo>

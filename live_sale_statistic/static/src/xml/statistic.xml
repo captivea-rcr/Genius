@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    
+    <t t-name="LiveSaleStatistic">
+    	
+	    <div class="o_dashboards">
+            <div class="container-fluid o_statistic_dashboard">
+                <div class="o_graph_linechart shadow-lg" />
+            </div>
+        </div>
+    </t>
+</templates>
